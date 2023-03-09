@@ -9,7 +9,7 @@
     "analyze": "cross-env NODE_ENV=development node config/webpack/analyze.js",
     "build": "cross-env NODE_ENV=production node config/webpack/build.js",
     "serve": "cross-env NODE_ENV=development node config/webpack/serve.js",
-    "dev": "npm run serve -- --PORT 8888 --API http://localhost:5000",
+    "dev": "npm run serve",
     "lint": "eslint src/**/*.{ts,tsx} -f html --cache -o ./eslintError.html",
     "lint:fix": "eslint src/**/*.{ts,tsx} --fix",
     "type-check": "tsc --watch",
