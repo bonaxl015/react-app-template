@@ -20,7 +20,11 @@ const NoMatch = () => {
               <div className="contant_box_404">
                 <h3 className="h2">Looks like you're lost</h3>
                 <p>The page you are looking cannot be found</p>
-                <Button type="primary" onClick={backToHome}>
+                <Button
+                  type="primary"
+                  style={{ backgroundColor: '#64009d' }}
+                  onClick={backToHome}
+                >
                   Go to Home
                 </Button>
               </div>
