@@ -1,30 +1,32 @@
-.no-match-main {
+.page_404 {
+  padding: 40px 0;
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page_404 {
   width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  
-  .no-match-items {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    gap: 100px;
-    margin: 0 20px;
+}
 
-    .stop-img {
-      height: 360px;
-      width: 360px;
-    }
+.four_zero_four_bg {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-    .error-code {
-      font-size: 6rem;
-      font-weight: bold;
-      margin: 0;
-    }
+.four_zero_four_bg h1 {
+  font-size: 80px;
+}
 
-    .error-message {
-      font-size: 1.5rem;
-      margin: 20px 0;
-    }
-  }
+.four_zero_four_bg h3 {
+  font-size: 80px;
+}
+
+.contant_box_404 {
+  margin-top: -50px;
+}
+
+.text-center {
+  text-align: center;
 }
