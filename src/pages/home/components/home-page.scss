@@ -1,0 +1,144 @@
+// font colors
+$light: #fff;
+
+.home-page-container {
+  height: calc(100% - 70px);
+  position: relative;
+  padding: 0 90px;
+  display: flex;
+  place-items: center;
+  gap: 2rem;
+
+  .home-page-left {
+    width: 60%;
+    z-index: 99;
+    
+    .home-page-text-container {
+      margin: 2.5rem 0;
+      
+      .text-title {
+        font-family: "ESquare";
+        color: $light;
+        font-size: 5rem;
+        text-transform: uppercase;
+        margin: 0 0 2rem 0;
+        line-height: 1.2;
+      }
+
+      .text-subtitle {
+        color: $light;
+        font-size: 1.5rem;
+        margin: 0;
+      }
+    }
+  }
+
+  .home-page-right {
+    .logo-orbit-container {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      animation: clockwiseRotate 10s linear infinite;
+
+      img {
+        width: 96px;
+        height: 96px;
+      }
+
+      .react-logo {
+        position: absolute;
+        top: 0;
+        left: calc(200px - 48px);
+        transform: translate();
+        animation: counterClockwiseRotate 10s linear infinite;
+      }
+
+      .sass-logo {
+        position: absolute;
+        top: calc(200px - 60px);
+        right: 0;
+        transform: rotateZ(-360deg);
+        animation: counterClockwiseRotate 10s linear infinite;
+      }
+
+      .typescript-logo {
+        position: absolute;
+        top: calc(200px - 60px);
+        left: 0;
+        animation: counterClockwiseRotate 10s linear infinite;
+      }
+
+      .swc-logo {
+        position: absolute;
+        bottom: 0;
+        left: calc(100px - 48px);
+        animation: counterClockwiseRotate 10s linear infinite;
+      }
+
+      .webpack-logo {
+        position: absolute;
+        bottom: 0;
+        right: calc(100px - 48px);
+        animation: counterClockwiseRotate 10s linear infinite;
+      }
+
+      @keyframes clockwiseRotate {
+        from {
+            transform: rotate(0deg)
+        }
+        to {
+            transform: rotate(360deg)
+        }
+      }
+
+      @keyframes counterClockwiseRotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(-360deg);
+        }
+      }
+    }
+  }
+
+  .circle-1 {
+    position: absolute;
+    top: 130px;
+    left: 440px;
+    height: 107px;
+    width: 107px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, rgb(120, 95, 192), rgba(30, 0, 117, 1));
+  }
+
+  .circle-2 {
+    position: absolute;
+    top: -230px;
+    left: -220px;
+    height: 480px;
+    width: 480px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, rgb(120, 95, 192), rgba(30, 0, 117, 1));
+  }
+
+  .circle-3 {
+    position: absolute;
+    bottom: -90px;
+    left: -120px;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-image: linear-gradient(to top, rgb(120, 95, 192), rgba(102, 48, 253, 1));
+  }
+
+  .circle-4 {
+    position: absolute;
+    bottom: -50px;
+    left: 200px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient(to top, rgb(120, 95, 192), rgba(102, 48, 253, 1));
+  }
+}

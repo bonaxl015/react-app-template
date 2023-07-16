@@ -1,7 +1,7 @@
 .nav-bar {
   height: 60px;
   width: 100%;
-  background-color: #64009d;
+  background-color: transparent;
   color: #fff;
 }
 
@@ -15,6 +15,7 @@
 
 .nav-bar__logo {
   cursor: pointer;
+  z-index: 99;
 }
 
 .nav-bar__list {
