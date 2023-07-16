@@ -6,6 +6,11 @@ import history from '@/store/reducers/history'
 import configureStore from '@/store'
 import { ConnectedRouter } from 'connected-react-router'
 import './index.scss'
+import '@/assets/fonts/PacitanLimoDemo.ttf'
+import '@/assets/fonts/G7Cube5.ttf'
+import '@/assets/fonts/takeshi.otf'
+import '@/assets/fonts/invisible.otf'
+import '@/assets/fonts/esquare.otf'
 import ErrorBoundary from '@/components/error-boundary'
 
 try {
