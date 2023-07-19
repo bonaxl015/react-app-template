@@ -1,6 +1,6 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
-import './nav-bar.scss'
+import styles from './nav-bar.scss'
 
 const NavBar = () => {
   const history = useHistory()
@@ -12,19 +12,19 @@ const NavBar = () => {
   const goToLogin = () => history.push('/login')
 
   return (
-    <nav className="nav-bar">
-      <div className="nav-bar__wrapper">
-        <div onClick={goToHome} className="nav-bar__logo">
+    <nav className={styles.navBar}>
+      <div className={styles.navBarWrapper}>
+        <div onClick={goToHome} className={styles.navBarLogo}>
           LOGO
         </div>
-        <ul className="nav-bar__list">
-          <li className="nav-bar__item" onClick={goToHome}>
+        <ul className={styles.navBarList}>
+          <li className={styles.navBarItem} onClick={goToHome}>
             Home
           </li>
-          <li className="nav-bar__item" onClick={goToAbout}>
+          <li className={styles.navBarItem} onClick={goToAbout}>
             About
           </li>
-          <li className="nav-bar__item" onClick={goToLogin}>
+          <li className={styles.navBarItem} onClick={goToLogin}>
             Login
           </li>
         </ul>

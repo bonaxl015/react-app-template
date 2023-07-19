@@ -1,7 +1,7 @@
 import React from 'react'
 import { listData } from '../data/libraries-data'
 import { Carousel } from 'antd'
-import './libraries-used.scss'
+import styles from './libraries-used.scss'
 
 const LibrariesUsed: React.FC = () => {
   const groupSize = Math.ceil(listData.length / 4)
@@ -24,26 +24,26 @@ const LibrariesUsed: React.FC = () => {
       {data.map(item => (
         <div
           key={item.key}
-          className="card-item"
+          className={styles.cardItem}
           onClick={() => gotoSite(item.websiteUrl)}
         >
-          <div className="card-img-container">
-            <img src={item.imageUrl} alt="" className="card-img" />
+          <div className={styles.cardImgContainer}>
+            <img src={item.imageUrl} alt="" className={styles.cardImg} />
           </div>
-          <p className="card-title">{item.name}</p>
+          <p className={styles.cardTitle}>{item.name}</p>
         </div>
       ))}
     </>
   )
 
   return (
-    <div className="libraries-wrapper">
-      <div className="libraries-data-container">
-        <p className="libraries-title">Libraries Used</p>
+    <div className={styles.librariesWrapper}>
+      <div className={styles.librariesDataContainer}>
+        <p className={styles.librariesTitle}>Libraries Used</p>
         <Carousel autoplay>
           {listDataGrouped.map((item, index) => (
             <div>
-              <div key={index} className="library-group-container">
+              <div key={index} className={styles.libraryGroupContainer}>
                 {displayLibraryList(item)}
               </div>
             </div>

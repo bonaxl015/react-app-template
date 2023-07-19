@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import { Form, Input, Button } from 'antd'
-import './login.scss'
+import styles from './login.scss'
 
 interface LoginFormProps {
   isLogin: boolean
@@ -81,16 +81,16 @@ const LoginForm: React.FC<LoginFormProps> = (props: LoginFormProps) => {
         {isLogin ? 'Login' : 'Register'}
       </Button>
       {isLogin ? (
-        <div className="bottom-form-item">
+        <div className={styles.bottomFormItem}>
           <span>No account yet? </span>
-          <span className="link-text-button" onClick={register}>
+          <span className={styles.linkTextButton} onClick={register}>
             Sign up
           </span>
         </div>
       ) : (
-        <div className="bottom-form-item">
+        <div className={styles.bottomFormItem}>
           <span>Already have an account? </span>
-          <span className="link-text-button" onClick={login}>
+          <span className={styles.linkTextButton} onClick={login}>
             Sign in
           </span>
         </div>
@@ -107,10 +107,12 @@ const Login: React.FC = () => {
   const login = () => setIsLogin(true)
 
   return (
-    <div className="main-container">
-      <div className="login-container">
-        <div className="form-container">
-          <span className="form-title">{isLogin ? 'Login' : 'Register'}</span>
+    <div className={styles.mainContainer}>
+      <div className={styles.loginContainer}>
+        <div className={styles.formContainer}>
+          <span className={styles.formTitle}>
+            {isLogin ? 'Login' : 'Register'}
+          </span>
           <LoginForm isLogin={isLogin} register={register} login={login} />
         </div>
       </div>

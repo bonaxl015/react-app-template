@@ -1,10 +1,10 @@
-.main-container {
+.mainContainer {
   height: 100vh;
   width: 100%;
   display: grid;
   place-items: center;
 
-  .login-container {
+  .loginContainer {
     padding: 20px;
     width: 340px;
     border: 1px #000 solid;
@@ -12,10 +12,10 @@
     display: grid;
     place-items: center;
   
-    .form-container {
+    .formContainer {
       width: 300px;
 
-      .form-title {
+      .formTitle {
         display: block;
         width: 100%;
         text-align: center;
@@ -24,14 +24,14 @@
         margin-bottom: 1.5rem;
       }
 
-      .bottom-form-item {
+      .bottomFormItem {
         width: 100%;
         text-align: center;
         margin-top: 1rem;
         font-size: 0.8rem;
       }
 
-      .link-text-button {
+      .linkTextButton {
         cursor: pointer;
         color: #4096FF;
       }

@@ -1,11 +1,11 @@
-.nav-bar {
+.navBar {
   height: 60px;
   width: 100%;
   background-color: transparent;
   color: #fff;
 }
 
-.nav-bar__wrapper {
+.navBarWrapper {
   height: 100%;
   padding: 0.8rem 6rem;
   display: flex;
@@ -13,19 +13,19 @@
   align-items: center;
 }
 
-.nav-bar__logo {
+.navBarLogo {
   cursor: pointer;
   z-index: 99;
 }
 
-.nav-bar__list {
+.navBarList {
   display: flex;
   flex-direction: row;
   list-style: none;
   gap: 2rem;
 }
 
-.nav-bar__item {
+.navBarItem {
   cursor: pointer;
 
   &:hover, &:active {

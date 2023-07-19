@@ -8,3 +8,9 @@
 // declare module '*.gif'
 // declare module '*.bmp'
 // declare module '*.tiff'
+
+// add scss modules
+declare module '*.scss' {
+  const styles: any
+  export default styles
+}

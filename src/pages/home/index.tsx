@@ -2,15 +2,15 @@ import React from 'react'
 import NavBar from '@/components/nav-bar'
 import HomePage from './components/home-page'
 import LibrariesUsed from './components/libraries-used'
-import './index.scss'
+import styles from './index.scss'
 
-const Home = () => (
+const Home: React.FC = () => (
   <>
-    <section className="home-page-section">
+    <section className={styles.homePageSection}>
       <NavBar />
       <HomePage />
     </section>
-    <section className="libraries-section">
+    <section className={styles.librariesSection}>
       <LibrariesUsed />
     </section>
   </>

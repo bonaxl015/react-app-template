@@ -27,7 +27,18 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
-          'css-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              import: true,
+              importLoaders: 2,
+              modules: {
+                mode: 'local',
+                localIdentName: '[name]__[local]--[hash:base64:5]',
+                localIdentContext: srcPath,
+              }
+            },
+          },
           'sass-loader',
           {
             loader: 'style-resources-loader',
